@@ -1,0 +1,9 @@
+[package]
+name = "dpu_offload"
+version = "0.1.0"
+edition = "2021"
+authors = ["SiliconLanguage"]
+description = "SmartNIC/DPU offloading logic for TensorPlane"
+
+[dependencies]
+usrbio = { path = "../usrbio" }

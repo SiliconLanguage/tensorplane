@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "crates/usrbio",
+    "crates/dpu_offload"
+]
+resolver = "2"

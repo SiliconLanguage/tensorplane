@@ -1,0 +1,14 @@
+[package]
+name = "usrbio"
+version = "0.1.0"
+edition = "2021"
+authors = ["SiliconLanguage"]
+
+[dependencies]
+
+[[bin]]
+name = "usrbio-bin"
+path = "src/main.rs"
+
+[lib]
+path = "src/lib.rs"
