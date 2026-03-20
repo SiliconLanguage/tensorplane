@@ -1,0 +1,168 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Architecture (Multi-Agent System) &mdash; Tensorplane AI Foundry  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Zero-Copy Data Plane" href="data_plane.html" />
+    <link rel="prev" title="Welcome to the Tensorplane AI Foundry Documentation" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Tensorplane AI Foundry
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Developer Guide:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Architecture (Multi-Agent System)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#the-model-context-protocol-mcp">The Model Context Protocol (MCP)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-team-of-agents-topology">The “Team of Agents” Topology</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-orchestrator-agentops">1. The Orchestrator (AgentOps)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ops-telemetry-triage">2. Ops: Telemetry &amp; Triage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dev-the-builders">3. Dev: The Builders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#eval-deployment">4. Eval &amp; Deployment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#the-recursive-loop">The Recursive Loop</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data_plane.html">Zero-Copy Data Plane</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bare_metal.html">Bare-Metal Silicon Layer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="infrastructure.html">Infrastructure &amp; Provisioning</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Tensorplane AI Foundry</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Architecture (Multi-Agent System)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/architecture.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="architecture-multi-agent-system">
+<h1>Architecture (Multi-Agent System)<a class="headerlink" href="#architecture-multi-agent-system" title="Link to this heading"></a></h1>
+<p>The core innovation of the Tensorplane AI Foundry is its transition from static infrastructure management to <strong>Scalable Agency</strong>. Instead of relying on human operators to profile and patch I/O bottlenecks, Tensorplane utilizes a specialized Multi-Agent System (MAS) to autonomously co-design and compile hardware-specific data paths.</p>
+<section id="the-model-context-protocol-mcp">
+<h2>The Model Context Protocol (MCP)<a class="headerlink" href="#the-model-context-protocol-mcp" title="Link to this heading"></a></h2>
+<p>To achieve true recursive self-improvement, the system leverages the <strong>Model Context Protocol (MCP)</strong>. MCP provides a standardized, stateless communication layer that allows our agentic pools to read real-time telemetry, access the global infrastructure state, and execute hyper-specialized tools securely.</p>
+<ul class="simple">
+<li><p><strong>Distributed FaaS Deployment:</strong> MCP servers are deployed statelessly via AWS Lambda.</p></li>
+<li><p><strong>S3 Context Hydration:</strong> Tools dynamically fetch their context from S3 URIs, allowing agents to share massive trace logs and eBPF maps without local file system constraints.</p></li>
+</ul>
+</section>
+<section id="the-team-of-agents-topology">
+<h2>The “Team of Agents” Topology<a class="headerlink" href="#the-team-of-agents-topology" title="Link to this heading"></a></h2>
+<p>The MAS is strictly hierarchical, organized into functional pools under the <code class="docutils literal notranslate"><span class="pre">/team_of_agents/</span></code> directory.</p>
+<section id="the-orchestrator-agentops">
+<h3>1. The Orchestrator (AgentOps)<a class="headerlink" href="#the-orchestrator-agentops" title="Link to this heading"></a></h3>
+<p>Acting as the central “brain,” the Orchestrator receives high-level intents (e.g., “Optimize the Ray cluster for Llama-3 70B inference”). It decomposes these prompts using a <strong>Stage Generation Agent</strong>, maps the stages to specific MCP tools via a <strong>Planner Agent</strong>, and delegates the workload to the specialized pools below.</p>
+</section>
+<section id="ops-telemetry-triage">
+<h3>2. Ops: Telemetry &amp; Triage<a class="headerlink" href="#ops-telemetry-triage" title="Link to this heading"></a></h3>
+<p>This pool acts as the autonomous SRE team.
+* <strong>Performance Monitor:</strong> Hooks into Cilium/Hubble eBPF maps to track P99 tail latency and identify POSIX socket overhead.
+* <strong>Resource Optimizer:</strong> Manages GPU fractioning, automatically adjusting NVIDIA Multi-Instance GPU (MIG) slices based on the incoming inference queue.
+* <strong>Power Monitor:</strong> Reads hardware Performance Monitoring Units (PMUs) to manage thermal limits and Dynamic Voltage and Frequency Scaling (DVFS).</p>
+</section>
+<section id="dev-the-builders">
+<h3>3. Dev: The Builders<a class="headerlink" href="#dev-the-builders" title="Link to this heading"></a></h3>
+<p>When the Ops pool detects a bottleneck, the Dev pool is dispatched to rewrite the underlying infrastructure code.
+* <strong>C++ Data Plane Agents:</strong> Specialized in writing lock-free <code class="docutils literal notranslate"><span class="pre">io_uring</span></code> and SPDK code.
+* <strong>Rust Kernel Agents:</strong> Generate eXpress Resubmission Path (XRP) eBPF hooks to push index lookups down into the NVMe driver.
+* <strong>Bare-Metal Agents:</strong> Write inline RISC-V assembly tuned for Stream Semantic Registers (SSR) on the Snitch architecture.</p>
+</section>
+<section id="eval-deployment">
+<h3>4. Eval &amp; Deployment<a class="headerlink" href="#eval-deployment" title="Link to this heading"></a></h3>
+<p>Code generated by the Dev pool is never deployed blindly. The Eval agents compile the code in isolated sandboxes, run cycle-accurate benchmarks, and perform hot-swapping into the live data plane only if the new kernel mathematically proves to lower latency or increase throughput.</p>
+</section>
+</section>
+<section id="the-recursive-loop">
+<h2>The Recursive Loop<a class="headerlink" href="#the-recursive-loop" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p><strong>Observe:</strong> <code class="docutils literal notranslate"><span class="pre">Ops</span></code> detects an I/O stall during multi-node tensor reduction.</p></li>
+<li><p><strong>Plan:</strong> <code class="docutils literal notranslate"><span class="pre">Orchestrator</span></code> dispatches a task to rewrite the NVMe polling logic.</p></li>
+<li><p><strong>Build:</strong> <code class="docutils literal notranslate"><span class="pre">Dev</span> <span class="pre">(Rust)</span></code> generates a new <code class="docutils literal notranslate"><span class="pre">usrbio</span></code> lock-free queue implementation.</p></li>
+<li><p><strong>Evaluate:</strong> <code class="docutils literal notranslate"><span class="pre">Eval</span></code> compiles the crate, runs a microbenchmark, and validates a 15% throughput increase.</p></li>
+<li><p><strong>Deploy:</strong> The new binary is injected into the data plane, and the cycle repeats.</p></li>
+</ol>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to the Tensorplane AI Foundry Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="data_plane.html" class="btn btn-neutral float-right" title="Zero-Copy Data Plane" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026, Ping Long.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
