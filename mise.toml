@@ -1,3 +1,27 @@
 [tools]
 go = "1.22"
 rust = "stable"
+
+[tasks."deps"]
+description = "Install all Go and Rust dependencies"
+run = "make deps"
+
+[tasks."build"]
+description = "Build the full Foundry stack (Go, Rust, and C++)"
+run = "make all"
+
+[tasks."run:control"]
+description = "Start the AgentX / MCP Control Plane"
+run = "make run-control"
+
+[tasks."run:data"]
+description = "Start the USRBIO Data Plane"
+run = "make run-data"
+
+[tasks."clean"]
+description = "Remove all build artifacts"
+run = "make clean"
+
+[tasks."check:infra"]
+description = "Validate provisioning scripts"
+run = "make provision-check"

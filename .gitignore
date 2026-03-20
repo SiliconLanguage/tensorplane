@@ -22,3 +22,10 @@ target
 control_plane/tensorplaned
 data_plane/target/
 control_plane/bin/
+
+# TensorPlane Build Artifacts
+bin/
+docs/build/
+.venv/
+.pytest_cache/
+__pycache__/

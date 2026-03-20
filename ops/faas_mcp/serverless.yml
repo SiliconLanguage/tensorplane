@@ -1,0 +1,10 @@
+service: mcp-distributed-foundry
+provider:
+  name: aws
+  runtime: python3.9
+functions:
+  mcpHandler:
+    handler: handler.mcp_gateway
+    environment:
+      MCP_S3_BUCKET: "foundry-mcp-context"
+      STORAGE_STRATEGY: "S3_URI"

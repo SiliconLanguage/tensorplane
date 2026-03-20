@@ -1,0 +1,10 @@
+# Note: PagedAttention (vLLM) prevents memory fragmentation in long-context tasks.
+services:
+  vllm-engine:
+    image: vllm/vllm-openai:latest
+    command: --model facebook/opt-125m --gpu-memory-utilization 0.9 --max-model-len 4096
+    ports: ["8000:8000"]
+    deploy:
+      resources:
+        reservations:
+          devices: [{driver: nvidia, count: all, capabilities: [gpu]}]
