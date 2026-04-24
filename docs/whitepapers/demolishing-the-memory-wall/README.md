@@ -2,12 +2,10 @@
 
 ## A Strategic Briefing on Memory Tiering, CXL Disaggregation, and Agentic Compute Capitalization
 
-### ---
-
 **Author**: Ping Long, Chief Systems Architect, Lead Researcher, SiliconLanguage Foundry  
 ***Contact**: [LinkedIn](https://www.linkedin.com/in/pinglong) | [GitHub](https://github.com/ping-long-github) | siliconlanguage.com | plongpingl@gmail.com*
 
-### ---
+---
 
 # I. Executive Summary: The Memory Wall and Disaggregation
 
