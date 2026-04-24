@@ -55,7 +55,7 @@ Memory fragmentation within these tiers is eliminated using engines like vLLM (w
 
 ## C. Software Configuration and Orchestration Frameworks
 
-Best-practice software configurations for managing this tiering involve the integration of inference engines like vLLM and SGLang with management layers such as NVIDIA Dynamo and LMCache.\[6, 7, 14\] These systems utilize PagedAttention and RadixAttention to eliminate memory fragmentation and enable cache reuse.\[6, 10, 15\]
+Best-practice software configurations for managing this tiering involve the integration of inference engines like [vLLM](https://github.com/vllm-project/vllm) and [SGLang](https://github.com/sgl-project/sglang) with management layers such as [NVIDIA Dynamo](https://github.com/nvidia/tlt-pytorch) and [LMCache](https://github.com/LMCache/LMCache).\[6, 7, 14\] These systems utilize PagedAttention and RadixAttention to eliminate memory fragmentation and enable cache reuse.\[6, 10, 15\]
 
 PagedAttention, implemented in vLLM, treats GPU memory as virtual memory, partitioning the KV cache into fixed-size blocks (typically 16 to 128 tokens).\[10, 11, 16\] This allows for non-contiguous storage and reduces internal fragmentation to below 5%, compared to the 60-80% waste seen in traditional contiguous allocation.\[10, 11\]
 
