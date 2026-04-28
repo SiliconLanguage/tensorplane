@@ -1,16 +1,12 @@
 # **Navigating Architectural Frontiers: Pioneering AI Supercomputing Fleet via 0-Kernel, 0-Copy Storage Virtualization**
-
-### ---
-
 ## *With Scenario Mapping for Transparent Acceleration for Legacy PostgreSQL* 
 
 **Author**: Ping Long, Chief Systems Architect, Lead Researcher, SiliconLanguage Foundry  
 ***Contact**: [LinkedIn](https://www.linkedin.com/in/pinglong) | [GitHub](https://github.com/ping-long-github) | siliconlanguage.com | plongpingl@gmail.com*
 
-### ---
+---
 
 ## **Executive Summary**
-
 The warp-speed advancement of non-volatile memory (NVMe) protocols, peripheral component interconnect express (PCIe) bandwidth, and massive-scale interconnect technologies has fundamentally altered the performance equations governing distributed relational database systems. For decades, the dominant architectural paradigm in systems engineering assumed that physical storage hardware was the slowest component in any data path, thereby masking the intrinsic inefficiencies of the operating system's software stack.1 Today, modern NVMe solid-state drives (SSDs) and Storage Class Memory (SCM) can routinely deliver millions of random Input/Output Operations Per Second (IOPS) at microsecond-scale latencies.3 Consequently, the Linux kernel—specifically the Virtual File System (VFS), the generic block layer, and interrupt-driven device drivers—has emerged as the primary, rigid bottleneck.1 These software layers consume disproportionate CPU instruction budgets, inflict excessive context-switching penalties, and artificially cap database throughput long before hardware saturation is reached.
 
 This paradigm shift presents cloud service providers and hyperscalers with a profound "Compatibility-Performance Paradox." Mission-critical, legacy relational databases such as PostgreSQL possess decades of hardened transactional logic, multiversion concurrency control (MVCC) optimizations, and broad ecosystem tooling that cannot be casually discarded or rewritten to natively support kernel-bypass storage APIs. Yet, continuing to execute standard, synchronous POSIX I/O calls through the Linux kernel permanently tethers these powerful engines to legacy performance profiles, preventing them from exploiting the exascale hardware upon which they execute.
