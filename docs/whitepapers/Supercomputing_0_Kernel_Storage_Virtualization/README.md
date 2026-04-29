@@ -271,58 +271,109 @@ For custom or emerging RISC-V silicon targeting high-performance storage, the ar
 
 ## **References**
 
-1. I/O Approaches in Modern Storage Systems \- CS647, accessed April 28, 2026, [https://www.csd.uoc.gr/\~hy647/lectures/09\_iopath.pdf](https://www.csd.uoc.gr/~hy647/lectures/09_iopath.pdf)  
-2. Rearchitecting Linux Storage Stack for µs Latency and High Throughput \- USENIX, accessed April 28, 2026, [https://www.usenix.org/system/files/osdi21-hwang.pdf](https://www.usenix.org/system/files/osdi21-hwang.pdf)  
-3. BypassD: Enabling fast userspace access to shared SSDs \- Computer Sciences User Pages, accessed April 28, 2026, [https://pages.cs.wisc.edu/\~swift/papers/asplos24-bypassd.pdf](https://pages.cs.wisc.edu/~swift/papers/asplos24-bypassd.pdf)  
-4. Quick Paper Summary: What Modern NVMe Storage Can Do, And How To Exploit It: High-Performance I/O… \- Medium, accessed April 28, 2026, [https://medium.com/@dichenldc/quick-paper-summary-what-modern-nvme-storage-can-do-and-how-to-exploit-it-high-performance-i-o-438a55ff6901](https://medium.com/@dichenldc/quick-paper-summary-what-modern-nvme-storage-can-do-and-how-to-exploit-it-high-performance-i-o-438a55ff6901)  
-5. DAOS: Revolutionizing High-Performance Storage with Intel® Optane™ Technology, accessed April 28, 2026, [https://www.intel.com/content/dam/www/public/us/en/documents/solution-briefs/high-performance-storage-brief.pdf](https://www.intel.com/content/dam/www/public/us/en/documents/solution-briefs/high-performance-storage-brief.pdf)  
-6. TensorPlane: The Recursive Self-Improving AI Foundry \- GitHub, accessed April 28, 2026, [https://github.com/SiliconLanguage/tensorplane\#tensorplane-the-recursive-self-improving-ai-foundry](https://github.com/SiliconLanguage/tensorplane#tensorplane-the-recursive-self-improving-ai-foundry)  
-7. zIO: Accelerating IO-Intensive Applications with Transparent Zero-Copy IO \- USENIX, accessed April 28, 2026, [https://www.usenix.org/conference/osdi22/presentation/stamler](https://www.usenix.org/conference/osdi22/presentation/stamler)  
-8. XRP: In-Kernel Storage Functions with eBPF \- USENIX, accessed April 28, 2026, [https://www.usenix.org/conference/osdi22/presentation/zhong](https://www.usenix.org/conference/osdi22/presentation/zhong)  
-9. Performance Characterization of Modern Storage Stacks: POSIX I/O, libaio, SPDK, and io\_uring \- Large Research, accessed April 28, 2026, [https://atlarge-research.com/pdfs/2023-cheops-iostack.pdf](https://atlarge-research.com/pdfs/2023-cheops-iostack.pdf)  
-10. Performance Characterization of Modern Storage Stacks: POSIX I/O, libaio, SPDK, and io\_uring \- ResearchGate, accessed April 28, 2026, [https://www.researchgate.net/publication/370601725\_Performance\_Characterization\_of\_Modern\_Storage\_Stacks\_POSIX\_IO\_libaio\_SPDK\_and\_io\_uring](https://www.researchgate.net/publication/370601725_Performance_Characterization_of_Modern_Storage_Stacks_POSIX_IO_libaio_SPDK_and_io_uring)  
-11. io\_uring for High-Performance DBMSs: When and How to Use It \- arXiv, accessed April 28, 2026, [https://arxiv.org/html/2512.04859v1](https://arxiv.org/html/2512.04859v1)  
-12. SPDK Architecture Guide \- simplyblock, accessed April 28, 2026, [https://simplyblock.io/glossary/spdk-architecture/](https://simplyblock.io/glossary/spdk-architecture/)  
-13. SPDK: Message Passing and Concurrency \- Storage Performance Development Kit, accessed April 28, 2026, [https://spdk.io/doc/concurrency.html](https://spdk.io/doc/concurrency.html)  
-14. XRP: In-Kernel Storage Functions with eBPF, accessed April 28, 2026, [https://nvmw.ucsd.edu/nvmw2023-program/nvmw2023-paper17-final\_version\_your\_extended\_abstract.pdf](https://nvmw.ucsd.edu/nvmw2023-program/nvmw2023-paper17-final_version_your_extended_abstract.pdf)  
-15. What is the LD\_PRELOAD trick? \- Stack Overflow, accessed April 28, 2026, [https://stackoverflow.com/questions/426230/what-is-the-ld-preload-trick](https://stackoverflow.com/questions/426230/what-is-the-ld-preload-trick)  
-16. File System \- DAOS v2.4, accessed April 28, 2026, [https://docs.daos.io/v2.4/user/filesystem/](https://docs.daos.io/v2.4/user/filesystem/)  
-17. Distributed Asynchronous Object Storage (DAOS) on Aurora \- Argonne Leadership Computing Facility, accessed April 28, 2026, [https://www.alcf.anl.gov/sites/default/files/2025-06/DAOS\_developer\_session\_ALCF\_v2.pdf](https://www.alcf.anl.gov/sites/default/files/2025-06/DAOS_developer_session_ALCF_v2.pdf)  
-18. Storage Performance Development Kit (SPDK), accessed April 28, 2026, [https://spdk.io/](https://spdk.io/)  
-19. SPDK: Event Framework \- Storage Performance Development Kit, accessed April 28, 2026, [https://spdk.io/doc/event.html](https://spdk.io/doc/event.html)  
-20. SPDK+: Low Latency or High Power Efficiency? We Take Both \- Diyu Zhou, accessed April 28, 2026, [https://zhou-diyu.github.io/files/spdkp-hotstorage25.pdf](https://zhou-diyu.github.io/files/spdkp-hotstorage25.pdf)  
-21. zIO: Accelerating IO-Intensive Applications with Transparent Zero-Copy IO \- USENIX, accessed April 28, 2026, [https://www.usenix.org/system/files/osdi22-stamler.pdf](https://www.usenix.org/system/files/osdi22-stamler.pdf)  
-22. Host Efficient Networking Stack Utilizing NIC DRAM \- acm sigcomm, accessed April 28, 2026, [https://conferences.sigcomm.org/events/apnet2023/papers/sec1-host.pdf](https://conferences.sigcomm.org/events/apnet2023/papers/sec1-host.pdf)  
-23. Copyright by Timothy P. Stamler 2022 \- The University of Texas at Austin, accessed April 28, 2026, [https://repositories.lib.utexas.edu/bitstreams/a33f91d8-0dee-45f7-ad0c-27fed3443943/download](https://repositories.lib.utexas.edu/bitstreams/a33f91d8-0dee-45f7-ad0c-27fed3443943/download)  
-24. Kelvin: Zero Copying Data Pipelines \- arXiv, accessed April 28, 2026, [https://arxiv.org/html/2504.06151v1](https://arxiv.org/html/2504.06151v1)  
-25. How to Create B-Tree Index Design \- OneUptime, accessed April 28, 2026, [https://oneuptime.com/blog/post/2026-01-30-btree-index-design/view](https://oneuptime.com/blog/post/2026-01-30-btree-index-design/view)  
-26. PostgreSQL Indexes: B-Tree \- Ilija Eftimov ‍, accessed April 28, 2026, [https://ieftimov.com/posts/postgresql-indexes-btree/](https://ieftimov.com/posts/postgresql-indexes-btree/)  
-27. Documentation: 16: 67.4. Implementation \- PostgreSQL, accessed April 28, 2026, [https://www.postgresql.org/docs/16/btree-implementation.html](https://www.postgresql.org/docs/16/btree-implementation.html)  
-28. Documentation: 18: 65.1. B-Tree Indexes \- PostgreSQL, accessed April 28, 2026, [https://www.postgresql.org/docs/current/btree.html](https://www.postgresql.org/docs/current/btree.html)  
-29. B-Tree Implementation in PostgreSQL: Deep Dive into Database Indexing | by Miftahul Huda, accessed April 28, 2026, [https://iniakunhuda.medium.com/b-tree-implementation-in-postgresql-deep-dive-into-database-indexing-b1a34032637d](https://iniakunhuda.medium.com/b-tree-implementation-in-postgresql-deep-dive-into-database-indexing-b1a34032637d)  
-30. XRP: In-Kernel Storage Functions with eBPF \- USENIX, accessed April 28, 2026, [https://www.usenix.org/system/files/osdi22-zhong\_1.pdf](https://www.usenix.org/system/files/osdi22-zhong_1.pdf)  
-31. XRP: In-Kernel Storage Functions with eBPF \- Semantic Scholar, accessed April 28, 2026, [https://www.semanticscholar.org/paper/67c2eeaf571d46f66ac554a6c23f8eb030681a1c](https://www.semanticscholar.org/paper/67c2eeaf571d46f66ac554a6c23f8eb030681a1c)  
-32. Arm System Memory Management Unit Architecture Specification, SMMUv3 IHI0070F, accessed April 28, 2026, [http://kib.kiev.ua/x86docs/ARM/SMMU/IHI0070F\_b\_System\_Memory\_Management\_Unit\_Architecture\_Specification.pdf](http://kib.kiev.ua/x86docs/ARM/SMMU/IHI0070F_b_System_Memory_Management_Unit_Architecture_Specification.pdf)  
-33. Sandbox Prefetching: Safe run-time evaluation of aggressive prefetchers \- ResearchGate, accessed April 28, 2026, [https://www.researchgate.net/publication/268239909\_Sandbox\_Prefetching\_Safe\_run-time\_evaluation\_of\_aggressive\_prefetchers](https://www.researchgate.net/publication/268239909_Sandbox_Prefetching_Safe_run-time_evaluation_of_aggressive_prefetchers)  
-34. "Zawrs" Extension for Wait-on-Reservation-Set instructions \- RISC-V International, accessed April 28, 2026, [https://docs.riscv.org/reference/isa/unpriv/zawrs.html](https://docs.riscv.org/reference/isa/unpriv/zawrs.html)  
-35. "Zihintntl" Extension for Non-Temporal Locality Hints \- RISC-V International, accessed April 28, 2026, [https://docs.riscv.org/reference/isa/unpriv/zihintntl.html](https://docs.riscv.org/reference/isa/unpriv/zihintntl.html)  
-36. NVIDIA Corporation. "[NVIDIA BlueField Data Processing Unit Architecture: Storage Offload and NVMe-oF Acceleration](https://network.nvidia.com/sites/default/files/doc-2020/pb-bluefield-dpu.pdf)." *NVIDIA Technical Whitepapers*, 2023\.  
-37. Rajbhandari, S., et al. "[ZeRO-Infinity: Breaking the GPU Memory Wall for Extreme Scale Deep Learning](https://sc21.supercomputing.org/proceedings/tech_paper/tech_paper_pages/pap464.html)." *Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC21)*, 2021\.  
-38. Alizadeh, K., et al. "[LLM in a flash: Efficient Large Language Model Inference with Limited Memory](https://machinelearning.apple.com/research/efficient-large-language)." *Apple Machine Learning Research*, 2023\.  
-39. Microsoft Engineering. "[Scaling Git at Microsoft: VFS for Git and the Scalar Architecture](https://devblogs.microsoft.com/devops/introducing-scalar/)." *Microsoft Open Source Blog*, 2022\.  
-40. Jayaram, S., et al. "[DiskANN: Fast Accurate Billion-point Nearest Neighbor Search on a Single Node](https://papers.nips.cc/paper/9527-rand-nsg-fast-accurate-billion-point-nearest-neighbor-search-on-a-single-node)." *Advances in Neural Information Processing Systems (NeurIPS)*, 2019\.  
-41. Ren, Z., & Trivedi, A. "[Performance Characterization of Modern Storage Stacks: POSIX I/O, libaio, SPDK, and io\_uring](https://atlarge-research.com/pdfs/2023-cheops-iostack.pdf)." *Proceedings of the 3rd Workshop on Challenges and Opportunities of Efficient and Performant Storage Systems (CHEOPS)*, 2023\.  
-42. Mambretti, J., et al. "[The Global Research Platform, StarLight Software Defined Exchange (SDX), SC24 NREs](https://www.nitrd.gov/nitrdgroups/images/2024/JET-Joe-Mambretti-11202024.pdf)." *NITRD*, 2024\.  
-43. Yuan, D. "[Kernel Bypass Technologies: Zero-Copy and Deterministic Execution](https://www.damonyuan.com/tech/260203-kernel-bypass-technologies)." *Systems Engineering Technical Analysis*, 2026\.  
-44. Li, H., et al. "[Pond: CXL-Based Memory Pooling Systems for Cloud Platforms](https://pages.cs.wisc.edu/~markhill/papers/asplos2023_pond.pdf)." *Proceedings of the 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)*, 2023\.  
-45. Zhong, Y., et al. "[XRP: In-Kernel Storage Functions with eBPF](https://www.google.com/search?q=https://www.usenix.org/system/files/osdi22-zhong.pdf)." *16th USENIX Symposium on Operating Systems Design and Implementation (OSDI)*, 2022\.  
-46. Sheng, Y., et al. "[FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU](https://arxiv.org/pdf/2303.06865)." *International Conference on Machine Learning (ICML)*, 2023\.  
-47. Klimovic, A., et al. "[ReFlex: Remote Flash ≈ Local Flash](https://hlitz.github.io/papers/reflex.pdf)." *Proceedings of the 22nd ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)*, 2017\.  
-48. Harter, T., et al. "[Slacker: Fast Distribution with Lazy Docker Containers](https://www.usenix.org/system/files/conference/fast16/fast16-papers-harter.pdf)." *14th USENIX Conference on File and Storage Technologies (FAST)*, 2016\.  
-49. Du, D., et al. "[Catalyzer: Sub-millisecond Startup for Serverless Computing with Initialization-less Booting](https://wangziqi2013.github.io/paper/2021/09/09/catalyzer.html)." *Proceedings of the 25th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)*, 2020\.  
-50. Cao, W., et al. "[PolarDB Serverless: A Cloud Native Database for Disaggregated Data Centers](https://www.google.com/search?q=https://pages.cs.wisc.edu/~yxy/cs839-f23/papers/polardb-serverless-sigmod21.pdf)." *Proceedings of the International Conference on Management of Data (SIGMOD)*, 2021\.  
-51. Ocient Engineering. "[Compute Adjacent Storage Architecture for AdTech: Zero-Copy Reliability on NVMe](https://ocient.com/case-studies/ocient-and-leading-dsp/)." *Ocient Technical Case Studies*, 2025\.  
-52. Ghalayini, M., et al. "[Beyond Lamport, Towards Probabilistic Fair Ordering in Financial and Ad Exchanges](https://arxiv.org/html/2510.13664v2)." *arXiv preprint cs.DC*, 2025\.
+1. Department of Computer Science, University of Crete. "[I/O Approaches in Modern Storage Systems](https://www.csd.uoc.gr/~hy647/lectures/09_iopath.pdf)." *CS647: Advanced Computer Architecture and Storage Systems*, 2023.
+
+2. Hwang, J., et al. "[Rearchitecting Linux Storage Stack for µs Latency and High Throughput](https://www.usenix.org/system/files/osdi21-hwang.pdf)." *15th USENIX Symposium on Operating Systems Design and Implementation (OSDI '21)*, USENIX Association, 2021.
+
+3. "[BypassD: Enabling Fast Userspace Access to Shared SSDs](https://pages.cs.wisc.edu/~swift/papers/asplos24-bypassd.pdf)." *29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS '24)*, ACM, 2024.
+
+4. Chenldc, D. "[Quick Summary: What Modern NVMe Storage Can Do, and How To Exploit It - High-Performance I/O for Modern Storage Systems](https://medium.com/@dichenldc/quick-paper-summary-what-modern-nvme-storage-can-do-and-how-to-exploit-it-high-performance-i-o-438a55ff6901)." *Medium*, 2022.
+
+5. DAOS Project. "[Distributed Asynchronous Object Storage (DAOS): High-Performance Storage Fabric for Exascale AI Infrastructure](https://docs.daos.io/)." *DAOS Official Documentation*, Intel Corporation & DAOS Community, 2024.
+
+6. SiliconLanguage. "[TensorPlane: Zero-Kernel User-Space Storage Engine for AI Workloads](https://github.com/SiliconLanguage/tensorplane)." *GitHub Repository*, SiliconLanguage, 2026.
+
+7. Stamler, T.P., et al. "[zIO: Accelerating IO-Intensive Applications with Transparent Zero-Copy IO](https://www.usenix.org/conference/osdi22/presentation/stamler)." *16th USENIX Symposium on Operating Systems Design and Implementation (OSDI '22)*, USENIX Association, 2022.
+
+8. Zhong, Y., et al. "[XRP: In-Kernel Storage Functions with eBPF](https://www.usenix.org/conference/osdi22/presentation/zhong)." *16th USENIX Symposium on Operating Systems Design and Implementation (OSDI '22)*, USENIX Association, 2022.
+
+9. Ren, Z., & Trivedi, A. "[Performance Characterization of Modern Storage Stacks: POSIX I/O, libaio, SPDK, and io\_uring](https://atlarge-research.com/pdfs/2023-cheops-iostack.pdf)." *3rd Workshop on Challenges and Opportunities of Efficient and Performant Storage Systems (CHEOPS '23)*, ACM, 2023.
+
+10. Ren, Z., & Trivedi, A. "[Performance Characterization of Modern Storage Stacks: POSIX I/O, libaio, SPDK, and io\_uring](https://www.researchgate.net/publication/370601725_Performance_Characterization_of_Modern_Storage_Stacks_POSIX_IO_libaio_SPDK_and_io_uring)." *ResearchGate*, 2023.
+
+11. "[io\_uring for High-Performance DBMSs: When and How to Use It](https://arxiv.org/html/2512.04859v1)." *arXiv preprint*, arXiv:2512.04859, 2024.
+
+12. Intel Corporation / SPDK Maintainers. "[Storage Performance Development Kit (SPDK): Architecture Overview](https://spdk.io/doc/introduction.html)." *SPDK Official Documentation*, 2024.
+
+13. Intel Corporation / SPDK Maintainers. "[SPDK: Message Passing and Concurrency](https://spdk.io/doc/concurrency.html)." *Storage Performance Development Kit Documentation*, 2024.
+
+14. Zhong, Y., et al. "[XRP: In-Kernel Storage Functions with eBPF - Extended Abstract](https://nvmw.ucsd.edu/nvmw2023-program/nvmw2023-paper17-final_version_your_extended_abstract.pdf)." *Non-Volatile Memories Workshop (NVMW 2023)*, UCSD, 2023.
+
+15. "[What Is the LD\_PRELOAD Trick?](https://stackoverflow.com/questions/426230/what-is-the-ld-preload-trick)" *Stack Overflow Community Discussion*, Stack Overflow, 2008.
+
+16. DAOS Project. "[File System - DAOS v2.4: High-Performance Storage Fabric for Distributed Workloads](https://docs.daos.io/v2.4/user/filesystem/)." *DAOS Official Documentation*, Intel Corporation & DAOS Community, 2024.
+
+17. Argonne Leadership Computing Facility. "[Distributed Asynchronous Object Storage (DAOS) on Aurora](https://www.alcf.anl.gov/sites/default/files/2025-06/DAOS_developer_session_ALCF_v2.pdf)." *ALCF Technical Documentation*, 2025.
+
+18. Intel Corporation / SPDK Maintainers. "[Storage Performance Development Kit (SPDK)](https://spdk.io/)." *SPDK Project Homepage*, 2024.
+
+19. Intel Corporation / SPDK Maintainers. "[SPDK: Event Framework](https://spdk.io/doc/event.html)." *Storage Performance Development Kit Documentation*, 2024.
+
+20. Zhou, D., et al. "[SPDK+: Low Latency or High Power Efficiency? We Take Both](https://zhou-diyu.github.io/files/spdkp-hotstorage25.pdf)." *17th USENIX Workshop on Hot Topics in Storage and File Systems (HotStorage '25)*, USENIX Association, 2025.
+
+21. Stamler, T.P., et al. "[zIO: Accelerating IO-Intensive Applications with Transparent Zero-Copy IO](https://www.usenix.org/system/files/osdi22-stamler.pdf)." *16th USENIX Symposium on Operating Systems Design and Implementation (OSDI '22)*, USENIX Association, 2022.
+
+22. "[Host Efficient Networking Stack Utilizing NIC DRAM](https://conferences.sigcomm.org/events/apnet2023/papers/sec1-host.pdf)." *7th Asia-Pacific Workshop on Networking (APNet 2023)*, ACM SIGCOMM, 2023.
+
+23. Stamler, T.P. "[Zero-Copy I/O for High-Performance Storage Systems: Doctoral Dissertation](https://repositories.lib.utexas.edu/bitstreams/a33f91d8-0dee-45f7-ad0c-27fed3443943/download)." *Ph.D. Dissertation*, The University of Texas at Austin, 2022.
+
+24. "[Kelvin: Zero Copying Data Pipelines](https://arxiv.org/html/2504.06151v1)." *arXiv preprint*, arXiv:2504.06151, 2025.
+
+25. OneUptime Engineering. "[How to Create B-Tree Index Design](https://oneuptime.com/blog/post/2026-01-30-btree-index-design/view)." *OneUptime Engineering Blog*, 2026.
+
+26. Eftimov, I. "[PostgreSQL Indexes: B-Tree](https://ieftimov.com/posts/postgresql-indexes-btree/)." *Ilija Eftimov Technical Blog*, 2019.
+
+27. The PostgreSQL Global Development Group. "[Documentation 16: 67.4. Implementation](https://www.postgresql.org/docs/16/btree-implementation.html)." *PostgreSQL Official Documentation*, 2023.
+
+28. The PostgreSQL Global Development Group. "[Documentation 18: 65.1. B-Tree Indexes](https://www.postgresql.org/docs/current/btree.html)." *PostgreSQL Official Documentation*, 2024.
+
+29. Huda, M. "[B-Tree Implementation in PostgreSQL: Deep Dive into Database Indexing](https://iniakunhuda.medium.com/b-tree-implementation-in-postgresql-deep-dive-into-database-indexing-b1a34032637d)." *Medium*, 2023.
+
+30. Zhong, Y., et al. "[XRP: In-Kernel Storage Functions with eBPF](https://www.usenix.org/system/files/osdi22-zhong_1.pdf)." *16th USENIX Symposium on Operating Systems Design and Implementation (OSDI '22)*, USENIX Association, 2022.
+
+31. Zhong, Y., et al. "[XRP: In-Kernel Storage Functions with eBPF](https://www.semanticscholar.org/paper/67c2eeaf571d46f66ac554a6c23f8eb030681a1c)." *Semantic Scholar*, 2022.
+
+32. ARM Limited. "[Arm System Memory Management Unit Architecture Specification, SMMUv3 IHI0070F](http://kib.kiev.ua/x86docs/ARM/SMMU/IHI0070F_b_System_Memory_Management_Unit_Architecture_Specification.pdf)." *ARM Architecture Reference Documentation*, ARM Limited, 2022.
+
+33. "[Sandbox Prefetching: Safe Run-Time Evaluation of Aggressive Prefetchers](https://www.researchgate.net/publication/268239909_Sandbox_Prefetching_Safe_run-time_evaluation_of_aggressive_prefetchers)." *ResearchGate / IEEE HPCA*, 2014.
+
+34. RISC-V International. "['Zawrs' Extension for Wait-on-Reservation-Set Instructions](https://docs.riscv.org/reference/isa/unpriv/zawrs.html)." *RISC-V Unprivileged ISA Specification*, RISC-V International, 2023.
+
+35. RISC-V International. "['Zihintntl' Extension for Non-Temporal Locality Hints](https://docs.riscv.org/reference/isa/unpriv/zihintntl.html)." *RISC-V Unprivileged ISA Specification*, RISC-V International, 2023.
+
+36. NVIDIA Corporation. "[NVIDIA BlueField Data Processing Unit Architecture: Storage Offload and NVMe-oF Acceleration](https://network.nvidia.com/sites/default/files/doc-2020/pb-bluefield-dpu.pdf)." *NVIDIA Technical Whitepapers*, 2023.
+
+37. Rajbhandari, S., et al. "[ZeRO-Infinity: Breaking the GPU Memory Wall for Extreme Scale Deep Learning](https://sc21.supercomputing.org/proceedings/tech_paper/tech_paper_pages/pap464.html)." *Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC21)*, 2021.
+
+38. Alizadeh, K., et al. "[LLM in a Flash: Efficient Large Language Model Inference with Limited Memory](https://machinelearning.apple.com/research/efficient-large-language)." *Apple Machine Learning Research*, 2023.
+
+39. Microsoft Engineering. "[Scaling Git at Microsoft: VFS for Git and the Scalar Architecture](https://devblogs.microsoft.com/devops/introducing-scalar/)." *Microsoft Open Source Blog*, 2022.
+
+40. Jayaram, S., et al. "[DiskANN: Fast Accurate Billion-point Nearest Neighbor Search on a Single Node](https://papers.nips.cc/paper/9527-rand-nsg-fast-accurate-billion-point-nearest-neighbor-search-on-a-single-node)." *Advances in Neural Information Processing Systems (NeurIPS)*, 2019.
+
+41. Ren, Z., & Trivedi, A. "[Performance Characterization of Modern Storage Stacks: POSIX I/O, libaio, SPDK, and io\_uring](https://atlarge-research.com/pdfs/2023-cheops-iostack.pdf)." *Proceedings of the 3rd Workshop on Challenges and Opportunities of Efficient and Performant Storage Systems (CHEOPS)*, 2023.
+
+42. Mambretti, J., et al. "[The Global Research Platform, StarLight Software Defined Exchange (SDX), SC24 NREs](https://www.nitrd.gov/nitrdgroups/images/2024/JET-Joe-Mambretti-11202024.pdf)." *NITRD*, 2024.
+
+43. Yuan, D. "[Kernel Bypass Technologies: Zero-Copy and Deterministic Execution](https://www.damonyuan.com/tech/260203-kernel-bypass-technologies)." *Systems Engineering Technical Analysis*, 2026.
+
+44. Li, H., et al. "[Pond: CXL-Based Memory Pooling Systems for Cloud Platforms](https://pages.cs.wisc.edu/~markhill/papers/asplos2023_pond.pdf)." *Proceedings of the 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)*, 2023.
+
+45. Zhong, Y., et al. "[XRP: In-Kernel Storage Functions with eBPF](https://www.usenix.org/system/files/osdi22-zhong.pdf)." *16th USENIX Symposium on Operating Systems Design and Implementation (OSDI '22)*, USENIX Association, 2022.
+
+46. Sheng, Y., et al. "[FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU](https://arxiv.org/pdf/2303.06865)." *International Conference on Machine Learning (ICML)*, 2023.
+
+47. Klimovic, A., et al. "[ReFlex: Remote Flash ≈ Local Flash](https://hlitz.github.io/papers/reflex.pdf)." *Proceedings of the 22nd ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)*, 2017.
+
+48. Harter, T., et al. "[Slacker: Fast Distribution with Lazy Docker Containers](https://www.usenix.org/system/files/conference/fast16/fast16-papers-harter.pdf)." *14th USENIX Conference on File and Storage Technologies (FAST)*, 2016.
+
+49. Du, D., et al. "[Catalyzer: Sub-millisecond Startup for Serverless Computing with Initialization-less Booting](https://wangziqi2013.github.io/paper/2021/09/09/catalyzer.html)." *Proceedings of the 25th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)*, 2020.
+
+50. Cao, W., et al. "[PolarDB Serverless: A Cloud Native Database for Disaggregated Data Centers](https://pages.cs.wisc.edu/~yxy/cs839-f23/papers/polardb-serverless-sigmod21.pdf)." *Proceedings of the International Conference on Management of Data (SIGMOD)*, 2021.
+
+51. Ocient Engineering. "[Compute Adjacent Storage Architecture for AdTech: Zero-Copy Reliability on NVMe](https://ocient.com/case-studies/ocient-and-leading-dsp/)." *Ocient Technical Case Studies*, 2025.
+
+52. Ghalayini, M., et al. "[Beyond Lamport, Towards Probabilistic Fair Ordering in Financial and Ad Exchanges](https://arxiv.org/html/2510.13664v2)." *arXiv preprint cs.DC*, 2025.
 
 ---
 
