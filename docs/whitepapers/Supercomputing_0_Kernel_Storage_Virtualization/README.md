@@ -277,7 +277,7 @@ For custom or emerging RISC-V silicon targeting high-performance storage, the ar
 
 3. "[BypassD: Enabling Fast Userspace Access to Shared SSDs](https://pages.cs.wisc.edu/~swift/papers/asplos24-bypassd.pdf)." *29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS '24)*, ACM, 2024.
 
-4. Chenldc, D. "[Quick Summary: What Modern NVMe Storage Can Do, and How To Exploit It — High-Performance I/O for Modern Storage Systems](https://medium.com/@dichenldc/quick-paper-summary-what-modern-nvme-storage-can-do-and-how-to-exploit-it-high-performance-i-o-438a55ff6901)." *Medium*, 2022.
+4. Chenldc, D. "[Quick Summary: What Modern NVMe Storage Can Do, and How To Exploit It - High-Performance I/O for Modern Storage Systems](https://medium.com/@dichenldc/quick-paper-summary-what-modern-nvme-storage-can-do-and-how-to-exploit-it-high-performance-i-o-438a55ff6901)." *Medium*, 2022.
 
 5. DAOS Project. "[Distributed Asynchronous Object Storage (DAOS): High-Performance Storage Fabric for Exascale AI Infrastructure](https://docs.daos.io/)." *DAOS Official Documentation*, Intel Corporation & DAOS Community, 2024.
 
@@ -297,11 +297,11 @@ For custom or emerging RISC-V silicon targeting high-performance storage, the ar
 
 13. Intel Corporation / SPDK Maintainers. "[SPDK: Message Passing and Concurrency](https://spdk.io/doc/concurrency.html)." *Storage Performance Development Kit Documentation*, 2024.
 
-14. Zhong, Y., et al. "[XRP: In-Kernel Storage Functions with eBPF — Extended Abstract](https://nvmw.ucsd.edu/nvmw2023-program/nvmw2023-paper17-final_version_your_extended_abstract.pdf)." *Non-Volatile Memories Workshop (NVMW 2023)*, UCSD, 2023.
+14. Zhong, Y., et al. "[XRP: In-Kernel Storage Functions with eBPF - Extended Abstract](https://nvmw.ucsd.edu/nvmw2023-program/nvmw2023-paper17-final_version_your_extended_abstract.pdf)." *Non-Volatile Memories Workshop (NVMW 2023)*, UCSD, 2023.
 
 15. "[What Is the LD\_PRELOAD Trick?](https://stackoverflow.com/questions/426230/what-is-the-ld-preload-trick)" *Stack Overflow Community Discussion*, Stack Overflow, 2008.
 
-16. DAOS Project. "[File System — DAOS v2.4: High-Performance Storage Fabric for Distributed Workloads](https://docs.daos.io/v2.4/user/filesystem/)." *DAOS Official Documentation*, Intel Corporation & DAOS Community, 2024.
+16. DAOS Project. "[File System - DAOS v2.4: High-Performance Storage Fabric for Distributed Workloads](https://docs.daos.io/v2.4/user/filesystem/)." *DAOS Official Documentation*, Intel Corporation & DAOS Community, 2024.
 
 17. Argonne Leadership Computing Facility. "[Distributed Asynchronous Object Storage (DAOS) on Aurora](https://www.alcf.anl.gov/sites/default/files/2025-06/DAOS_developer_session_ALCF_v2.pdf)." *ALCF Technical Documentation*, 2025.
 
