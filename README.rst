@@ -13,6 +13,19 @@ Executive Vision & Overview
 
 The system utilizes a specialized **Multi-Agent System (MAS)** driven by the **Model Context Protocol (MCP)** to autonomously monitor, evaluate, and rewrite its own compute kernels. This recursive loop ensures the continuous elimination of I/O and latency bottlenecks without human intervention.
 
+📄 Architectural Research & Whitepapers
+=======================================
+
+The orchestration mechanics and data planes within the Tensorplane AI Foundry are governed by our published research on post-Von Neumann, 0-kernel AI infrastructure.
+
+* `0-Kernel, 0-Copy Data Movement: Scaling LLM Point-to-Point and Collective Communication <./docs/whitepapers/Hyperscale_0_Kernel_Network_Communication/0-Kernel-0-Copy-Data-Movement-Hyperscale-LLM.pdf>`_
+  
+  * **Focus:** Scale-out Network Data Planes. Exposes the "Hyperscale Wall" of traditional BSP and NCCL collectives. Details the transition to host-driven, zero-copy abstractions (NIXL, fabric-lib) and Dynamic Queue Pair Load Balancing (DQPLB) to bypass GPU SM starvation across 100,000+ GPU clusters.
+
+* `Demolishing the Memory Wall for AGI-Scale LLM Inference <./docs/whitepapers/demolishing-the-memory-wall/Demolishing%20the%20Memory%20Wall%20for%20AGI-Scale%20LLM%20Inference.pdf>`_
+  
+  * **Focus:** Scale-up Storage and Memory Disaggregation. Examines how Disaggregated KV Cache Tiering and CXL 3.1 memory pooling are utilized to demolish the memory wall, supporting massive context windows and multi-turn state persistence in agentic workflows.
+
 The "Team of Agents" Architecture
 =================================
 
