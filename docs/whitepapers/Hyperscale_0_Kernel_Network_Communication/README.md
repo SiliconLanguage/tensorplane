@@ -129,37 +129,37 @@ The fundamental insight driving `fabric-lib` is that both NVIDIA ConnectX and AW
 
 Transitioning to a 0-kernel, transport-agnostic architecture requires precise coordination between the host CPU, the RDMA NIC, and the GPU memory controllers. The following Rust blueprint demonstrates how to properly orchestrate out-of-order EFA completions with strictly ordered PCIe transactions to safely unblock GPU execution without relying on an OS kernel context switch.
 
-Rust  
-// This memory address is read continuously by the GPU's stall kernel.  
-let uvm\_watcher\_ptr \= engine.alloc\_uvm\_watcher(|old\_val, new\_val| {  
-    log::trace\!("UVM State transitioned from {} to {}", old\_val, new\_val);  
+```rust
+// This memory address is read continuously by the GPU's stall kernel.
+let uvm_watcher_ptr = engine.alloc_uvm_watcher(|old_val, new_val| {
+    log::trace!("UVM State transitioned from {} to {}", old_val, new_val);
 });
 
-// Register the IMMCOUNTER expectation with the TransferEngine  
-engine.expect\_imm\_count(  
-    target\_imm\_id,  
-    expected\_chunk\_count,  
-    move || {  
-        // CALLBACK CONTEXT: Executed concurrently on the CPU callback thread  
-        // ONLY when the NIC Completion Queue has received exactly expected\_chunk\_count  
-        // immediate values matching \`target\_imm\_id\`.
+// Register the IMMCOUNTER expectation with the TransferEngine
+engine.expect_imm_count(
+    target_imm_id,
+    expected_chunk_count,
+    move || {
+        // CALLBACK CONTEXT: Executed concurrently on the CPU callback thread
+        // ONLY when the NIC Completion Queue has received exactly expected_chunk_count
+        // immediate values matching `target_imm_id`.
 
-        // At this exact microsecond, PCIe ordering guarantees that all payload  
+        // At this exact microsecond, PCIe ordering guarantees that all payload
         // bytes are safely resident in the GPU's HBM.
 
-        // Notify the GPU to unblock the CUDA stream  
-        // Write the READY status directly to the UVM flag via GDRCopy.  
-        // This sub-microsecond PCIe transaction bypasses the Linux kernel entirely.  
-        write\_uvm\_flag\_via\_gdrcopy(uvm\_watcher\_ptr, STATUS\_READY);
+        // Notify the GPU to unblock the CUDA stream
+        // Write the READY status directly to the UVM flag via GDRCopy.
+        // This sub-microsecond PCIe transaction bypasses the Linux kernel entirely.
+        write_uvm_flag_via_gdrcopy(uvm_watcher_ptr, STATUS_READY);
 
-        log::info\!("KV Cache fully received. CUDA execution unblocked.");  
-    }  
+        log::info!("KV Cache fully received. CUDA execution unblocked.");
+    }
 );
 
-// Under the hood, the TransferEngine worker thread is executing a tight,  
-// lock-free polling loop against the \`libfabric\` CQ, translating out-of-order  
-// SRD completions into \`IMMCOUNTER\` increments.  
----
+// Under the hood, the TransferEngine worker thread is executing a tight,
+// lock-free polling loop against the `libfabric` CQ, translating out-of-order
+// SRD completions into `IMMCOUNTER` increments.
+```
 
 ### **6\. Orthogonal Optimizations: Algorithmic Scheduling and Predictive Routing**
 
