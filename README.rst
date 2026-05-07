@@ -1,6 +1,6 @@
-================================================================================
+====================================================
 TensorPlane: The Recursive Self-Improving AI Foundry
-================================================================================
+====================================================
 
 .. image:: https://img.shields.io/badge/Architecture-Compute--Continuum-blue
 .. image:: https://img.shields.io/badge/Foundry-Recursive--Self--Improving-orange
@@ -9,9 +9,14 @@ TensorPlane: The Recursive Self-Improving AI Foundry
 Executive Vision & Overview
 ===========================
 
-**TensorPlane** (also operating as `dataplane-emu`) is an end-to-end **Recursive Self-Improving AI Foundry**. It is engineered as a hardware-accurate data plane emulator and orchestration framework designed to span the entire compute continuum: from Go-based cloud orchestration to C++/Rust kernel-bypass storage, down to bare-metal RISC-V execution.
+TensorPlane (also operating as ``dataplane-emu``) is an end-to-end Recursive Self-Improving AI Foundry. It is engineered as a hardware-accurate data plane emulator and orchestration framework designed to span the entire compute continuum: from Go-based cloud orchestration to C++/Rust kernel-bypass storage, down to bare-metal RISC-V execution.
 
-The system utilizes a specialized **Multi-Agent System (MAS)** driven by the **Model Context Protocol (MCP)** to autonomously monitor, evaluate, and rewrite its own compute kernels. This recursive loop ensures the continuous elimination of I/O and latency bottlenecks without human intervention.
+**Technical Dimension & Industry Alignment**
+
+Anticipating macro industry trends—most notably the collision with the fundamental "Memory Wall" and the architectural shift toward Prefill-Decode (PD) disaggregation—TensorPlane operates at the definitive edge of **hardware-software co-design**. It bridges the gap between hyper-optimized **AI/LLM inference ecosystems** (leveraging vLLM, SGLang, and KVCache-centric memory tiering) and raw silicon execution. By dynamically orchestrating Triton/MLIR compilers for specific silicon realities like NVIDIA Blackwell's NVFP4 precision and Tensor Memory (TMEM), and bypassing the legacy OS tax entirely via CXL 3.1 pooling and zero-copy RDMA, the framework is built to sustain microsecond-latency for trillion-parameter MoE expert streaming and global KV cache pooling.
+
+The system utilizes a specialized Multi-Agent System (MAS) driven by the Model Context Protocol (MCP) to autonomously monitor, evaluate, and rewrite its own compute kernels based on real-time hardware telemetry. This recursive loop ensures the continuous elimination of I/O and latency bottlenecks without human intervention.
+
 
 📄 Architectural Research & Whitepapers
 =======================================
