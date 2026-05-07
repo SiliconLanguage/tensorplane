@@ -26,6 +26,10 @@ The orchestration mechanics and data planes within the Tensorplane AI Foundry ar
   
   * **Focus:** Scale-up Storage and Memory Disaggregation. Examines how Disaggregated KV Cache Tiering and CXL 3.1 memory pooling are utilized to demolish the memory wall, supporting massive context windows and multi-turn state persistence in agentic workflows.
 
+* `Navigating Architectural Frontiers: Pioneering AI Supercomputing via 0-Kernel, 0-Copy Storage Virtualization <./docs/whitepapers/Supercomputing_0_Kernel_Storage_Virtualization/Ping_Long_AI_Supercomputing_0_Kernel_Storage_Architecture.pdf>`_
+
+  * **Focus:** Scale-up Storage Virtualization and Legacy Acceleration. Resolves the "Compatibility-Performance Paradox" by introducing the "Double Trampoline" architecture. Synthesizes SPDK kernel bypass, zIO transparent zero-copy, and eBPF/XRP B-Tree offloading to achieve bare-metal NVMe latency for unmodified legacy systems (e.g., PostgreSQL).
+
 The "Team of Agents" Architecture
 =================================
 
